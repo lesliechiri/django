@@ -12,12 +12,14 @@ class Student(models.Model):
 	phone_number = models.CharField(max_length = 20)
 	date_joined = models.DateField()
 	courses = models.ManyToManyField(Course)
+	image = models.ImageField(upload_to = "profiles")
+	
 
 
 
 	def __str__(self):
 		return self.first_name +" "+ self.last_name
-	
+
 
 
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+      <title>Courses</title>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/normalize.css">
+    
+
+</head>
+<body>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Teacher</th>
+		<th>Duration</th>
+
+	</tr>
+
+
+	{% for course in courses%}
+
+		<tr>
+			<td>{{course.name}}</td>
+			<td>{{course.description}}</td>
+			<td>{{course.teacher}}</td>
+			<td>{{course.duration_of_course}}</td>
+
+		</tr>	
+
+	{% endfor %}		
+</table>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
