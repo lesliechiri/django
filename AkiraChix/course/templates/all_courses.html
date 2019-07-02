@@ -6,16 +6,24 @@
       <title>Courses</title>
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/normalize.css">
+      <meta charset="utf-8">
+  	  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
 
 </head>
 <body>
-<table>
+<table class = "table table-striped">
+<button><a href = "/course/add/">Add course</a></button>
 	<tr>
 		<th>Name</th>
 		<th>Description</th>
 		<th>Teacher</th>
 		<th>Duration</th>
+		<th>Details</th>
+		<th>Edit</th>
 
 	</tr>
 
@@ -27,6 +35,8 @@
 			<td>{{course.description}}</td>
 			<td>{{course.teacher}}</td>
 			<td>{{course.duration_of_course}}</td>
+			<td><a href = "/course/view/{{course.pk}}/">View More</a>
+			<td><a href = "/course/edit/{{course.pk}}/">Edit</a>
 
 		</tr>	
 
@@ -34,6 +44,16 @@
 </table>
 
 
+<style type="text/css">
+	button{
+		border-radius: 20px;
+        width: 100px;
+        height: 40px;
+        float: right;
+        border: solid 3px #93db70;
+
+	}
+</style>
 
 
 

@@ -1,0 +1,78 @@
+<!DOCTYPE >
+<html>
+
+<head>
+
+      <title>STUDENT DETAILS</title>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/normalize.css">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+      
+</head>
+<body>
+<div class = "dets">
+	<img src= {{student.image.url}} width="200" height="200">
+	<p><div class = "firsts">First Name:</div> {{student.first_name}}</p>
+	<p><div class = "firsts">Last Name:</div> {{student.last_name}}</p>
+	<p><div class = "firsts">Registration Number: </div>{{student.registration_number}}</p>
+	<p><div class = "firsts">Email:</div> {{student.email}}</p>
+	<p><div class = "firsts">Phone-number:</div> {{student.phone_number}}</p>
+	<p><div class = "firsts">Courses:</div> {{student.courses}}</p>
+	<p><div class = "firsts">Date-joined: </div>{{student.date_joined}}</p>
+	<p><div class = "firsts">D.O.B:</div> {{student.date_of_birth}}</p>
+	<p><div class = "firsts">Gender: </div>{{student.gender}}</p>
+	<button><a href = <td><a href = "/student/edit/{{student.pk}}/">Edit</a></button>
+	
+</div>
+<style type="text/css">
+	
+	button{
+		border-radius: 20px;
+        width: 100px;
+        height: 40px;
+        
+        border: solid 3px #93db70;
+	}
+	body{
+		background-color: #444;
+		font-family: arial;
+		font-weight: bold;
+		color: #ffffff;
+	}
+	.dets{
+	
+		margin-left: 50px;
+		margin-top: 20px;
+	}
+	.firsts{
+		color: #f03853;
+	}
+</style>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

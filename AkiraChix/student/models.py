@@ -12,13 +12,17 @@ class Student(models.Model):
 	phone_number = models.CharField(max_length = 20)
 	date_joined = models.DateField()
 	courses = models.ManyToManyField(Course)
-	image = models.ImageField(upload_to = "profiles")
+	image = models.ImageField(upload_to = "profiles" , blank= True)
 	
 
 
 
 	def __str__(self):
 		return self.first_name +" "+ self.last_name
+
+	def image_url(self):
+		if self.image and hasattr(self.image, "url"):
+			return self.image.url
 
 
 
