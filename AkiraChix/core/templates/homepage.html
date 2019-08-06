@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+      <title>Registration</title>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+</head>
+<body>
+
+	{% if user.is_authenticated %}
+
+			<h1>Welcome  {{user.username}}<h1>
+
+			Add a student <a href = "/student/add/">Here</a>
+
+			Or
+
+			Logout<a href="/accounts/logout/">Here</a>
+
+
+
+
+	{% else %}
+		<h1>Hello Guest</h1>
+
+		You can Log in <a href="/accounts/login/">Here</a>
+
+		Or
+
+		Create an account <a href="/accounts/register/">Here</a>
+
+	{%endif%}		
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
